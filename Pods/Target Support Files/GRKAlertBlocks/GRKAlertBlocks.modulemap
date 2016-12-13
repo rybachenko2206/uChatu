@@ -1,0 +1,6 @@
+framework module GRKAlertBlocks {
+  umbrella header "GRKAlertBlocks-umbrella.h"
+
+  export *
+  module * { export * }
+}

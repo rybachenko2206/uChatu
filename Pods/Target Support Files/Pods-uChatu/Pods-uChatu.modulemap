@@ -1,0 +1,6 @@
+framework module Pods_uChatu {
+  umbrella header "Pods-uChatu-umbrella.h"
+
+  export *
+  module * { export * }
+}

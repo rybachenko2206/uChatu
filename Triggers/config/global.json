@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "_default": {
+            "link": "uChatu"
+        }, 
+        "uChatu": {
+            "applicationId": "oKiHPEbpFa63UySTJBZY3YdIeVFzm9Sn7ltpPPZA", 
+            "masterKey": "PktoPD8wka85uc3jkKirvcPTiOE4QajZzNhmMHtd"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.5"
+    }
+}

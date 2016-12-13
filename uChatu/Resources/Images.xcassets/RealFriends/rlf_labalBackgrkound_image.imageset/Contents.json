@@ -1,0 +1,44 @@
+{
+  "images" : [
+    {
+      "resizing" : {
+        "mode" : "3-part-horizontal",
+        "center" : {
+          "mode" : "fill",
+          "width" : 109
+        },
+        "capInsets" : {
+          "right" : 88,
+          "left" : 123
+        }
+      },
+      "idiom" : "universal",
+      "filename" : "rlf_labalBackgrkound_image.png",
+      "scale" : "1x"
+    },
+    {
+      "resizing" : {
+        "mode" : "3-part-horizontal",
+        "center" : {
+          "mode" : "fill",
+          "width" : 139
+        },
+        "capInsets" : {
+          "right" : 258,
+          "left" : 243
+        }
+      },
+      "idiom" : "universal",
+      "filename" : "rlf_labalBackgrkound_image@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
