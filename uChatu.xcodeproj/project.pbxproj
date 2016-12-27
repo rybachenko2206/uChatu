@@ -171,6 +171,7 @@
 
 /* Begin PBXFileReference section */
 		427943D81DFF13E7006217C6 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../Users/rrybachenko/Library/Developer/Xcode/DerivedData/uChatu-fiajkkcccbapoigigqpeaxmgfqay/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework"; sourceTree = "<group>"; };
+		42D83BCB1E12681500F23EA3 /* uChatu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = uChatu.entitlements; sourceTree = "<group>"; };
 		540FFF331AA9A0BD007AD9B2 /* UICollectionView+CenteredLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+CenteredLayout.h"; sourceTree = "<group>"; };
 		540FFF341AA9A0BD007AD9B2 /* UICollectionView+CenteredLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+CenteredLayout.m"; sourceTree = "<group>"; };
 		541E39141AB2EF080057711F /* PFInstallation+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFInstallation+Additions.h"; sourceTree = "<group>"; };
@@ -883,6 +884,7 @@
 		A8DA6C891A1CC3A4009429AF /* uChatu */ = {
 			isa = PBXGroup;
 			children = (
+				42D83BCB1E12681500F23EA3 /* uChatu.entitlements */,
 				A8DA6CB01A1CC47E009429AF /* Classes */,
 				A8DA6CB91A1CC47E009429AF /* Resources */,
 				A8DA6C8A1A1CC3A4009429AF /* Supporting Files */,
@@ -1179,6 +1181,9 @@
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 						};
@@ -1546,6 +1551,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = uChatu/uChatu.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Sanzhar Kadyrbekov (MKCBZ98X6G)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 64E87687AG;
@@ -1592,6 +1598,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = uChatu/uChatu.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Sanzhar Kadyrbekov (64E87687AG)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 64E87687AG;

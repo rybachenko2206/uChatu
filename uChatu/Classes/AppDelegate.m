@@ -32,8 +32,9 @@
 #import "AppDelegate.h"
 
 
-static NSString * const parseAppId = @"oKiHPEbpFa63UySTJBZY3YdIeVFzm9Sn7ltpPPZA";
-static NSString * const parseClientKey = @"hq4w4LT6IGWK42Uss9eWy0IEOur7W6qOQHbqh7WA";
+static NSString * const parseAppId = @"uchatuAppIdSanzharKadirbekov";//@"oKiHPEbpFa63UySTJBZY3YdIeVFzm9Sn7ltpPPZA";
+static NSString * const parseClientKey = @"uChatuMasterKeySK";//@"hq4w4LT6IGWK42Uss9eWy0IEOur7W6qOQHbqh7WA";
+static NSString * const parseServer = @"https://uchatu.herokuapp.com/parse";
 
 
 
@@ -75,10 +76,15 @@ static NSString * const parseClientKey = @"hq4w4LT6IGWK42Uss9eWy0IEOur7W6qOQHbqh
     [PFInstallation registerSubclass];
     [PFUser registerSubclass];
     
-//    [Parse enableLocalDatastore];
-    
-    [Parse setApplicationId:parseAppId
-                  clientKey:parseClientKey];
+    //[Parse enableLocalDatastore];
+    //[Parse setApplicationId:parseAppId clientKey:parseClientKey];
+    [Parse setLogLevel:PFLogLevelInfo];
+    ParseClientConfiguration *config = [ParseClientConfiguration configurationWithBlock:^(id<ParseMutableClientConfiguration> mutableConfig) {
+        mutableConfig.applicationId = parseAppId;
+        mutableConfig.clientKey = parseClientKey;
+        mutableConfig.server = parseServer;
+    }];
+    [Parse initializeWithConfiguration:config];
     
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     

@@ -117,6 +117,8 @@ NSString *const userPasswordKey = @"userPasswordKey";
                                                                     respInfo.success = NO;
                                                                     completionBlock(respInfo);
                                                                 }];
+                                            } else {
+                                                completionBlock(respInfo);
                                             }
                                         }
                                     }];

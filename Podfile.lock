@@ -17,8 +17,8 @@ PODS:
   - KissXML/Core (5.1.2)
   - MD5Digest (0.1.0)
   - nv-ios-http-status (0.0.1)
-  - Parse (1.7.5.3):
-    - Bolts/Tasks (>= 1.2.0)
+  - Parse (1.14.2):
+    - Bolts/Tasks (~> 1.8)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
@@ -188,7 +188,7 @@ DEPENDENCIES:
   - GRKAlertBlocks (~> 1.0.2)
   - MD5Digest (~> 0.1)
   - nv-ios-http-status (~> 0.0)
-  - Parse (~> 1.7.1)
+  - Parse
   - SDWebImage
   - XMPPFramework (from `https://github.com/robbiehanson/XMPPFramework.git`, branch `master`)
 
@@ -210,10 +210,10 @@ SPEC CHECKSUMS:
   KissXML: 246c842586bb77110e04fb88e19376d96245c856
   MD5Digest: 99bcccfc389c5b7a0edaf66beb80fbc7596a3b65
   nv-ios-http-status: b6c2b5fc8656cc19e0d3000dadce2080b99d0e2f
-  Parse: 373adbb1ad2e34d383542c3b28f678c49ebe4881
+  Parse: 4335d65f40cb3d43190d723144bbe1afb9c38230
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   XMPPFramework: 977eef5d00c20fe9fb19c30d84a89c2d5564252d
 
-PODFILE CHECKSUM: 1ce44c838a41a502d6e4d36cfae73b98c2c52011
+PODFILE CHECKSUM: 322ce08582c230c6d9608a93801ab2f939131c36
 
 COCOAPODS: 1.0.1

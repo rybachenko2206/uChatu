@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Log in-->
@@ -23,7 +27,7 @@
                                     <constraint firstAttribute="height" constant="30" id="CDM-KS-f6O"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="go"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="go"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r45-mu-GSF" customClass="JBTextField">
                                 <rect key="frame" x="30" y="245" width="260" height="30"/>
@@ -31,7 +35,7 @@
                                     <constraint firstAttribute="height" constant="30" id="Ahs-Ve-f2G"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ei-Lj-6rm">
                                 <rect key="frame" x="77" y="400" width="167" height="40"/>
@@ -40,7 +44,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                 <state key="normal" title="LOGIN" backgroundImage="lgn_login_button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="login:" destination="sdx-x6-Y36" eventType="touchUpInside" id="sBN-o3-OaZ"/>
@@ -53,8 +57,8 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                 <state key="normal" title="REGISTER" backgroundImage="lgn_register_button">
-                                    <color key="titleColor" red="0.0078431372550000003" green="0.54117647059999996" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.055092871189117432" green="0.44655013084411621" blue="0.98852944374084473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="signUp:" destination="sdx-x6-Y36" eventType="touchUpInside" id="zph-5A-nYa"/>
@@ -73,7 +77,7 @@
                                     <constraint firstAttribute="height" constant="15" id="gHY-Bw-jpJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
-                                <color key="textColor" red="0.85122841279999995" green="0.068333675989999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.85122841279999995" green="0.068333675989999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6z-wQ-ohx">
@@ -84,15 +88,15 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <state key="normal" title="Forgot password?">
-                                    <color key="titleColor" red="0.0078431372550000003" green="0.54117647059999996" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.055092871189117432" green="0.44655013084411621" blue="0.98852944374084473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="forgotPassword:" destination="sdx-x6-Y36" eventType="touchUpInside" id="Bgg-tx-jQX"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nFD-sR-0h7" firstAttribute="top" secondItem="A1o-BX-i7L" secondAttribute="bottom" constant="45" id="0Pq-ix-ZOZ"/>
                             <constraint firstAttribute="trailing" secondItem="0ei-Lj-6rm" secondAttribute="trailing" constant="76" id="5fu-Ow-G3B"/>
@@ -119,7 +123,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Log in" id="0KE-d7-hgo"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="emailTextFiled" destination="Mnt-Ql-UgS" id="ZLT-93-FOE"/>
                         <outlet property="invalidDataLabel" destination="1TL-qh-fPa" id="3YR-gM-ES2"/>
@@ -129,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C8R-IT-H8j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-386" y="-1989"/>
+            <point key="canvasLocation" x="-606" y="-1989"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="DLx-XR-cqA">
@@ -174,7 +177,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                 <state key="normal" title="SIGN UP" backgroundImage="fcc_sendPassword_button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="signUp:" destination="HDp-xt-qDW" eventType="touchUpInside" id="RQX-gI-1yk"/>
@@ -186,7 +189,7 @@
                                     <constraint firstAttribute="height" constant="21" id="Ttq-vE-Cda"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
-                                <color key="textColor" red="0.85122841279999995" green="0.068333675989999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.85122841279999995" green="0.068333675989999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyN-aK-yub">
@@ -205,7 +208,7 @@
                                     </fragment>
                                     <fragment content="Terms of Service ">
                                         <attributes>
-                                            <color key="NSColor" red="0.10980392156862745" green="0.3411764705882353" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.084771104156970978" green="0.22092807292938232" blue="0.99828243255615234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="16" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
@@ -219,7 +222,7 @@
                                     </fragment>
                                     <fragment content="Privacy">
                                         <attributes>
-                                            <color key="NSColor" red="0.10980392156862745" green="0.3411764705882353" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.084771104156970978" green="0.22092807292938232" blue="0.99828243255615234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="16" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
@@ -234,7 +237,7 @@
                                     <constraint firstAttribute="width" constant="130" id="JP6-yq-aEY"/>
                                 </constraints>
                                 <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="termsOfService:" destination="HDp-xt-qDW" eventType="touchUpInside" id="cvT-BX-OQy"/>
@@ -247,14 +250,14 @@
                                     <constraint firstAttribute="height" constant="28" id="vqq-B1-yWd"/>
                                 </constraints>
                                 <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="privacy:" destination="HDp-xt-qDW" eventType="touchUpInside" id="UYF-7J-Dhw"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="s5n-so-HCE" secondAttribute="centerX" id="1A8-Jh-R80"/>
                             <constraint firstAttribute="centerX" secondItem="Y3P-0f-bc1" secondAttribute="centerX" id="Bt3-F6-RhR"/>
@@ -284,7 +287,6 @@
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="confirmPasswordTextField" destination="ghV-Nu-t0W" id="JlZ-MX-pov"/>
                         <outlet property="emailTextField" destination="UCj-mk-H77" id="QZY-AZ-g6f"/>
@@ -321,8 +323,8 @@
                                 <rect key="frame" x="73" y="251" width="175" height="40"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                 <state key="normal" title="FIND" backgroundImage="fcc_sendPassword_button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="find:" destination="fIc-af-Qum" eventType="touchUpInside" id="hDi-6K-0f0"/>
@@ -334,15 +336,15 @@
                                     <constraint firstAttribute="height" constant="21" id="Rk4-D9-15o"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
-                                <color key="textColor" red="0.85122841279999995" green="0.068333675989999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.85122841279999995" green="0.068333675989999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXl-x4-0tF">
                                 <rect key="frame" x="73" y="452" width="175" height="40"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                 <state key="normal" title="SEND PASSWORD" backgroundImage="fcc_sendPassword_button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="sendPassword:" destination="fIc-af-Qum" eventType="touchUpInside" id="SfW-kw-YS9"/>
@@ -384,7 +386,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="510-aX-Q2f" firstAttribute="top" secondItem="HXl-x4-0tF" secondAttribute="bottom" constant="76" id="Fbg-4j-CEU"/>
                             <constraint firstAttribute="trailing" secondItem="HXl-x4-0tF" secondAttribute="trailing" constant="72" id="LGy-oH-7l2"/>
@@ -405,7 +407,6 @@
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="accountFoundLabel" destination="bNK-1j-fao" id="Y4y-R5-Lro"/>
                         <outlet property="emailTextField" destination="YAo-nn-HyV" id="FJd-lv-7pc"/>
@@ -430,15 +431,15 @@
                         <viewControllerLayoutGuide type="bottom" id="HwO-Gk-QS0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9rT-ci-B4c">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cI9-Rf-dLh">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cI9-Rf-dLh" firstAttribute="leading" secondItem="9rT-ci-B4c" secondAttribute="leading" id="IVt-Wf-gDp"/>
                             <constraint firstItem="cI9-Rf-dLh" firstAttribute="top" secondItem="Jcm-CW-ncI" secondAttribute="bottom" id="bT2-Qc-mcx"/>
@@ -448,7 +449,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="Qt7-IM-wVK"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="webView" destination="cI9-Rf-dLh" id="i7h-AO-UL6"/>
                     </connections>
@@ -462,7 +462,6 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N0i-Kb-2W3" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uig-QD-0KE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -474,7 +473,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjn-5r-N6T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-800" y="-1989"/>
+            <point key="canvasLocation" x="-1328" y="-1989"/>
         </scene>
         <!--Share-->
         <scene sceneID="NGy-gP-WaQ">
@@ -495,8 +494,8 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                 <state key="normal" title="EMAIL" backgroundImage="shr_email_button">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="emailButtonTapped:" destination="kFE-Wr-97j" eventType="touchUpInside" id="vXg-G6-73B"/>
@@ -509,8 +508,8 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                 <state key="normal" title="TWITTER" backgroundImage="shr_twitter_button">
-                                    <color key="titleColor" red="0.1960784314" green="0.67450980390000004" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.16881167888641357" green="0.60725599527359009" blue="0.87211185693740845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="twitterButtonTapped:" destination="kFE-Wr-97j" eventType="touchUpInside" id="zhD-rN-c6W"/>
@@ -523,8 +522,8 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                 <state key="normal" title="FACEBOOK" backgroundImage="shr_facebook_button">
-                                    <color key="titleColor" red="0.12549019610000001" green="0.33725490200000002" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.098538853228092194" green="0.24396616220474243" blue="0.7176700234413147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="facebookButtonTapped:" destination="kFE-Wr-97j" eventType="touchUpInside" id="QpH-by-RDd"/>
@@ -537,15 +536,15 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                 <state key="normal" title="MESSAGE" backgroundImage="shr_message_button">
-                                    <color key="titleColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.26102268695831299" green="0.83681917190551758" blue="0.31946933269500732" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="messageButtonTapped:" destination="kFE-Wr-97j" eventType="touchUpInside" id="GUU-q7-3gK"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jT5-4c-YWz" firstAttribute="top" secondItem="wfY-Vt-DeN" secondAttribute="bottom" constant="160" id="0Sx-l1-gb5"/>
                             <constraint firstItem="lNo-Kk-dHx" firstAttribute="leading" secondItem="rCF-Gc-eEF" secondAttribute="leading" constant="59" id="4to-NN-SDW"/>
@@ -574,7 +573,6 @@
                             </mask>
                         </variation>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="messageButtonOutlet" destination="lNo-Kk-dHx" id="z75-Np-MNZ"/>
                         <outlet property="topEmailButtonConstraint" destination="0Sx-l1-gb5" id="khs-wj-A6k"/>
@@ -586,12 +584,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fcc_sendPassword_button" width="40" height="40"/>
-        <image name="lgn_login_button" width="59" height="40"/>
+        <image name="fcc_sendPassword_button" width="39" height="40"/>
+        <image name="lgn_login_button" width="57" height="40"/>
         <image name="lgn_register_button" width="40" height="40"/>
-        <image name="shr_email_button" width="55" height="40"/>
-        <image name="shr_facebook_button" width="53" height="40"/>
-        <image name="shr_message_button" width="57" height="40"/>
+        <image name="shr_email_button" width="54" height="40"/>
+        <image name="shr_facebook_button" width="52" height="40"/>
+        <image name="shr_message_button" width="56" height="40"/>
         <image name="shr_twitter_button" width="56" height="40"/>
     </resources>
 </document>
